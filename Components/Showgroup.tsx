@@ -1,5 +1,5 @@
 import * as React from "react";
-import { Label } from "./label";
+import { Label } from "./Label";
 
 export interface IShowgroupProps {
   currentAmount:string;

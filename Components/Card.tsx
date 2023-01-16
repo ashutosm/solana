@@ -1,6 +1,6 @@
 import Image from "next/image";
 import * as React from "react";
-import { Label } from "./label";
+import { Label } from "./Label";
 import { coin, PairCollection } from "./PairCollection";
 import { Showgroup } from "./Showgroup";
 

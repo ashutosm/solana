@@ -11,8 +11,9 @@ export interface IPairCollectionProps {
 export function PairCollection (props: IPairCollectionProps) {
   return (
     <div className='px-[15px] py-[9px] rounded-[29px] bg-gray-600 flex gap-3'>
-         {props.pairs.map((e)=>{
+         {props.pairs.map((e,i)=>{
             return (<Image 
+              key={`${e.imageName}_${i}`}
               className='cursor-pointer hover:opacity-50'
             src={`../${e.imageName}.svg`}
             alt={e.name}
