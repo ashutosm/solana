@@ -1,4 +1,4 @@
-import { Html, Head, Main, NextScript } from 'next/document'
+import { Head, Html, Main, NextScript } from "next/document";
 
 export default function Document() {
   return (
@@ -7,7 +7,15 @@ export default function Document() {
       <body>
         <Main />
         <NextScript />
+        <svg className="svg">
+          <clipPath id="my-clip-path" clipPathUnits="objectBoundingBox">
+            <path
+              d="M0.696,0.069 L0.696,0.069 C0.705,0.05,0.721,0.033,0.742,0.022 C0.763,0.01,0.787,0.004,0.812,0.004 H0.947 C0.962,0.004,0.976,0.009,0.987,0.018 C0.998,0.027,1,0.039,1,0.051 V0.961 C1,0.973,0.998,0.985,0.987,0.994 C0.976,1,0.962,1,0.947,1 H0.059 C0.044,1,0.029,1,0.018,0.994 C0.008,0.985,0.002,0.973,0.002,0.961 V0.051 C0.002,0.039,0.008,0.027,0.018,0.018 C0.029,0.009,0.044,0.004,0.059,0.004 H0.193 C0.218,0.004,0.242,0.01,0.264,0.022 C0.284,0.033,0.3,0.05,0.31,0.069 L0.31,0.069 C0.325,0.1,0.352,0.129,0.386,0.148 C0.421,0.167,0.461,0.177,0.503,0.177 C0.544,0.177,0.585,0.167,0.619,0.148 C0.653,0.129,0.68,0.1,0.696,0.069"
+              stroke="url(#paint1_linear_1_1504)"
+            />
+          </clipPath>
+        </svg>
       </body>
     </Html>
-  )
+  );
 }
